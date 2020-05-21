@@ -3,60 +3,49 @@ export function getHeapSortAnimations(array) {
     if (array.length <= 1) {
         return array;
     }
-    const auxiliaryArray = array.slice();
-    mergeSortHelper(array, 0, array.length - 1, auxiliaryArray, animations);
-    return animations;
+    heapSortHelper(array, animations);
+    //return animations;
+    return array;
+
 }
 
-function mergeSortHelper (mainArray, startIdx, endIdx, auxiliaryArray, animations) {
-    if (startIdx === endIdx) {
-        return;
-    }
-    const middleIdx = Math.floor((startIdx + endIdx) / 2);
-    mergeSortHelper(auxiliaryArray, startIdx, middleIdx, mainArray, animations);
-    mergeSortHelper(auxiliaryArray, middleIdx + 1, endIdx, mainArray, animations);
-    doMerge(mainArray, startIdx, middleIdx, endIdx, auxiliaryArray, animations);
-}
+function heapSortHelper(mainArray, animations) {
+    let n = mainArray.length;
 
-function doMerge(mainArray, startIdx, middleIdx, endIdx, auxiliaryArray, animations) {
-    let k = startIdx;
-    let i = startIdx;
-    let j = middleIdx + 1;
-    while (i <= middleIdx && j <= endIdx) {
-        // These are the values that we're comparing; we push them once to change their color.
-        animations.push([i, j]);
-        // These are the values that we're comparing, we push them a second time to rever ttheir color.
-        animations.push([i, j]);
-        if (auxiliaryArray[i] <= auxiliaryArray[j]) {
-            // We overwrite the value at index k in the original array with the value at index i in the auxiliary array.
-            animations.push([k, auxiliaryArray[i]]);
-            mainArray[k++] = auxiliaryArray[j++];
-
-        } else {
-            // We overwrite the value at index k in the original array with the value at index j in the auxiliary array.
-            animations.push([k, auxiliaryArray[j]]);
-            mainArray[k++] = auxiliaryArray[j++];
-        }
+    // Build a maxheap
+    for (let i = Math.floor(n / 2) - 1; i >= 0; i--) {
+        heapify(mainArray, animations, i, n);
     }
-    while (i <= middleIdx) {
-        //These are the values that we're comparing; we push them once to change their color.
-        animations.push([i, i]);
-        // These are the values that we're comparing, we push them a second time to rever ttheir color.
-        animations.push([i, i]);
-        // We overwrite the value at index k in the original array with the value at index i in the auxiliary array.
-        animations.push([k, auxiliaryArray[i]]);
-        mainArray[k++] = auxiliaryArray[i++];
-    }
-    while (j <= endIdx) {
-        // These are the values that we're comparing; we push them once to change their color.
-        animations.push([j, j]);
-        // These are the values that we're comparing, we push them a second time to rever ttheir color.
-        animations.push([j, j]);
-         // We overwrite the value at index k in the original array with the value at index j in the auxiliary array.
-         animations.push([k, auxiliaryArray[j]]);
-         mainArray[k++] = auxiliaryArray[j++];
 
+    for (let i = n - 1; i > 0; i--) {
+        swap(mainArray, animations, 0, i);
+        heapify(mainArray, animations, 0, i)
     }
 }
 
+function heapify(mainArray, animations, i, n) {
+    let left = 2 * i + 1;
+    let right = 2 * i + 2;
+    let max = i;
 
+    if (left < n && mainArray[left] > mainArray[i]) {
+        max = left;
+    }
+
+    if (right < n && mainArray[right] > mainArray[max]) {
+        max = right;
+    }
+
+    if (max != i) {
+        swap(mainArray, animations, i, max)
+        heapify(mainArray, animations, max, n)
+    }
+}
+
+function swap(mainArray, animations, indexReplaced, indexReplacing) {
+    let sub = 0;
+    sub = mainArray[indexReplaced];
+    mainArray[indexReplaced] = mainArray[indexReplacing];
+    mainArray[indexReplacing] = sub;
+
+}

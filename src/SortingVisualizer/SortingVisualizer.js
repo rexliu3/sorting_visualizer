@@ -105,7 +105,7 @@ export default class SortingVisualizer extends React.Component {
             const heapSortedArray = getHeapSortAnimations(array.slice());
             const bubbleSortedArray = getBubbleSortAnimations(array.slice());
 
-            const testArray = quickSortedArray;
+            const testArray = heapSortedArray;
 
             console.log(arraysAreEqual(javaScriptSortedArray, testArray));
         }

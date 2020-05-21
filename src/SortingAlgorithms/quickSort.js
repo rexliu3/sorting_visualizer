@@ -13,8 +13,8 @@ function quickSortHelper (mainArray, leftIdx, rightIdx) {
     if (leftIdx >= rightIdx) {
         return;
     }
-    const pivot = mainArray[(leftIdx + rightIdx) / 2];
-    const sideIdx = partition(mainArray, leftIdx, rightIdx, pivot);
+    let pivot = mainArray[Math.floor((leftIdx + rightIdx) / 2)];
+    let sideIdx = partition(mainArray, leftIdx, rightIdx, pivot);
     quickSortHelper(mainArray, leftIdx, sideIdx - 1);
     quickSortHelper(mainArray, sideIdx, rightIdx);
 
@@ -40,8 +40,7 @@ function partition (mainArray, leftIdx, rightIdx, pivot) {
 }
 
 function swap(mainArray, leftIdx, rightIdx) {
-    const sub = mainArray[leftIdx];
-
+    let sub = mainArray[leftIdx];
     mainArray[leftIdx] = mainArray[rightIdx];
     mainArray[rightIdx] = sub;
 }
