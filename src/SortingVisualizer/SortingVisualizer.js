@@ -157,3 +157,4 @@ function arraysAreEqual(array1, array2) {
     }
     return true
 }
+
