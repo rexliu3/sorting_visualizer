@@ -66,10 +66,13 @@ Visualize popular sorting algorithms including Bubble Sort, Quick Sort, Heap Sor
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-Run node application
+1. Run React.js application
    ```sh
    npm run
    ```
+2. Visualize!
+  a. Generate new array
+  b. Choose a sort to visualize
 
 
 <!-- ROADMAP -->
