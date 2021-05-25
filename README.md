@@ -36,7 +36,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 <p align="center">
-  <img width="400" height="300" src="images/screenshot.png">
+  <img width="600" height="400" src="images/screenshot.png">
 </p>
 
 Visualize popular sorting algorithms including Bubble Sort, Quick Sort, Heap Sort, and Merge Sort.
