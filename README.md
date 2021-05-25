@@ -71,8 +71,8 @@ Visualize popular sorting algorithms including Bubble Sort, Quick Sort, Heap Sor
    npm run
    ```
 2. Visualize!
-  a. Generate new array
-  b. Choose a sort to visualize
+   * Generate new array
+   * Choose a sort to visualize
 
 
 <!-- ROADMAP -->
