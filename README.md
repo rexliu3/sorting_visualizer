@@ -55,7 +55,7 @@ Visualize popular sorting algorithms including Bubble Sort, Quick Sort, Heap Sor
 ### Installation
 1. Clone the repo
    ```sh
-   git clone https://github.com/rexliu3/Hack-UCI.git
+   git clone https://github.com/rexjmliu/sorting_visualizer.git
    ```
 2. Install NPM packages
    ```sh
@@ -76,7 +76,7 @@ Visualize popular sorting algorithms including Bubble Sort, Quick Sort, Heap Sor
 
 <!-- ROADMAP -->
 ## Roadmap
-See the [open issues](https://github.com/rexliu3/sorting_visualizer/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/rexjmliu/sorting_visualizer/issues) for a list of proposed features (and known issues).
 
 
 <!-- CONTRIBUTING -->
@@ -99,22 +99,22 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 Rex Liu - rexliu3@berkeley.edu
 
-Project Link: [https://github.com/rexliu3/sorting_visualizer](https://github.com/rexliu3/sorting_visualizer)
+Project Link: [https://github.com/rexjmliu/sorting_visualizer](https://github.com/rexjmliu/sorting_visualizer)
 
 
 ## Acknowledgements
 Built with reference to [video](https://www.youtube.com/watch?v=pFXYym4Wbkc)
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/rexliu3/sorting_visualizer?style=for-the-badge
-[contributors-url]: https://github.com/rexliu3/sorting_visualizer/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/rexliu3/sorting_visualizer?style=for-the-badge
-[forks-url]: https://github.com/rexliu3/sorting_visualizer/network/members
-[stars-shield]: https://img.shields.io/github/stars/rexliu3/sorting_visualizer?style=for-the-badge
-[stars-url]: https://github.com/rexliu3/sorting_visualizer/stargazers
-[issues-shield]: https://img.shields.io/github/issues/rexliu3/sorting_visualizer?style=for-the-badge
-[issues-url]: https://github.com/rexliu3/sorting_visualizer/issues
+[contributors-shield]: https://img.shields.io/github/contributors/rexjmliu/sorting_visualizer?style=for-the-badge
+[contributors-url]: https://github.com/rexjmliu/sorting_visualizer/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/rexjmliu/sorting_visualizer?style=for-the-badge
+[forks-url]: https://github.com/rexjmliu/sorting_visualizer/network/members
+[stars-shield]: https://img.shields.io/github/stars/rexjmliu/sorting_visualizer?style=for-the-badge
+[stars-url]: https://github.com/rexjmliu/sorting_visualizer/stargazers
+[issues-shield]: https://img.shields.io/github/issues/rexjmliu/sorting_visualizer?style=for-the-badge
+[issues-url]: https://github.com/rexjmliu/sorting_visualizer/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/rexliu3/sorting_visualizer/blob/master/LICENSE.txt
+[license-url]: https://github.com/rexjmliu/sorting_visualizer/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/rexliu3
+[linkedin-url]: https://linkedin.com/in/rexjmliu
